@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紗愛へ</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<!-- 1ページ目 -->
+<div class="container" id="page1">
+
+    <h1>💌</h1>
+
+    <h2>紗愛へ</h2>
+
+    <p>
+        このサイトは紗愛にだけ見てほしくて作りました。<br>
+        30秒だけ時間をください😊
+    </p>
+
+    <button id="startBtn">スタート</button>
+
+</div>
+
+<!-- 2ページ目 -->
+<div class="container" id="page2" style="display:none;">
+
+    <h2>実は…</h2>
+
+    <p>
+        少し勇気を出して、このサイトを作りました。<br><br>
+
+        最後まで見てくれると嬉しいです😊
+    </p>
+
+    <button id="nextBtn">次へ</button>
+
+</div>
+
+<!-- 3ページ目 -->
+<div class="container" id="page3" style="display:none;">
+
+    <h1>🥹</h1>
+
+    <h2>デートしませんか？</h2>
+
+    <p>
+        一緒に楽しい思い出を作りたいです！
+    </p>
+
+    <div class="buttons">
+
+        <button id="yesBtn">YES💖</button>
+
+        <button id="noBtn">NO🙈</button>
+
+    </div>
+
+</div>
+<!-- 4ページ目 -->
+<div class="container" id="page4" style="display:none;">
+
+    <h1>📅</h1>
+
+    <h2>いつがいい？</h2>
+
+    <p>都合のいい日を選んでね😊</p>
+
+    <input type="date" id="date">
+
+    <br><br>
+
+    <button id="dateBtn">
+        次へ
+    </button>
+
+</div>
+<!-- 5ページ目 -->
+<div class="container" id="page5" style="display:none;">
+
+    <h1>🎉</h1>
+
+    <h2>何したい？</h2>
+
+    <p>気になるものを選んでね!!
+        気になるものはいくつ選んでもOK!<br>
+        一緒に楽しもう!!!
+    
+    </p>
+
+    <div class="choice-grid">
+
+        <button class="choice">🎬 映画</button>
+        <button class="choice">☕ カフェ</button>
+        <button class="choice">🐬 水族館</button>
+        <button class="choice">🎤 カラオケ</button>
+        <button class="choice">🎳 ボウリング</button>
+        <button class="choice">❤  おまかせ</button>
+
+    </div>
+
+    <br>
+
+    <button id="finishBtn">次へ</button>
+
+</div>
+<!-- 6ページ目 -->
+<div class="container" id="page6" style="display:none;">
+
+    <h1>💖</h1>
+
+    <h2>最後まで見てくれてありがとう！</h2>
+
+    <p>
+        このサイトを作るのは少し緊張しました。<br><br>
+
+        でも、紗愛が楽しんでくれるといいなと思って作りました<br><br>
+
+        一緒に楽しい思い出を作ろうね！<br><br>
+
+        日程や行きたい場所はLINEでゆっくり決めよう！
+    </p>
+
+    <button id="finishMessageBtn">
+        もちろんだよ！
+    </button>
+
+</div>
+<script src="script.js"></script>
+<div id="hearts"></div>
+</body>
+
+</html>
