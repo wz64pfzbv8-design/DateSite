@@ -35,14 +35,24 @@ document.getElementById("yesBtn").onclick = function () {
 
 const noBtn = document.getElementById("noBtn");
 
-noBtn.addEventListener("mouseover", function () {
+noBtn.style.position = "fixed";
 
-    const x = Math.random() * 300 - 150;
-    const y = Math.random() * 200 - 100;
+function moveNoButton() {
+    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
 
-    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+}
 
-});
+// パソコン
+noBtn.addEventListener("mouseenter", moveNoButton);
+
+// スマホ
+noBtn.addEventListener("touchstart", function(e) {
+    e.preventDefault();
+    moveNoButton();
+}, { passive: false });
 
 document.getElementById("dateBtn").onclick = function(){
 
