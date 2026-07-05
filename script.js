@@ -138,3 +138,5 @@ function createHeart(){
 
 
 setInterval(createHeart, 200);
+
+moveNoButton();
